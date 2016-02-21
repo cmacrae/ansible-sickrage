@@ -1,0 +1,7 @@
+---
+sickrage_dependencies:
+  - g++
+  - git-core
+  - make
+  - python-cheetah
+  - python-openssl

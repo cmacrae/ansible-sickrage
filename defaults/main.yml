@@ -1,0 +1,14 @@
+---
+sickrage_user_name: sickrage
+sickrage_group_name: sickrage
+sickrage_user_uid: 1005
+sickrage_group_gid: 1005
+sickrage_user_home: /var/lib/{{ sickrage_user_name }}
+sickrage_clone_uri: 'git://github.com/SickRage/SickRage'
+sickrage_conf_path: "{{ sickrage_user_home }}/.sickrage"
+sickrage_library_path: "{{ sickrage_user_home}}/data/" # Parent path for TV show library, download directories, etc.
+sickrage_port: 4040
+sickrage_service_reload_command: systemctl daemon-reload
+sickrage_service_file:
+  src: sickrage.service.j2
+  dest: /etc/systemd/system/sickrage.service

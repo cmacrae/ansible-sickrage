@@ -1,0 +1,7 @@
+---
+
+  - name: Restart SickRage service
+    service: name=sickrage state=restarted
+
+  - name: Reload Sickrage service config
+    command: "{{ sickrage_service_reload_command }}"

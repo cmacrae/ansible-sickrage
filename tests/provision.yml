@@ -1,0 +1,7 @@
+---
+
+  - name: Apply the cmacrae.sickrage role to all rage_servers
+    hosts: rage_servers
+
+    roles:
+      - ../../cmacrae.sickrage
