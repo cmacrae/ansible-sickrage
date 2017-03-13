@@ -77,8 +77,8 @@
       group: root
       mode: 0600
     notify:
-      - Reload Sickrage service config
-      - Restart Sickrage service
+      - Reload SickRage service config
+      - Restart SickRage service
 
   - meta: flush_handlers
 
